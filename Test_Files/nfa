@@ -1,0 +1,53 @@
+digraph {
+	rankdir=LR
+	node [shape=circle]
+	"f₄"
+	node [shape=doublecircle]
+	"f₇"
+	node [shape=circle]
+	"q₃"
+	node [shape=circle]
+	"f₅"
+	node [shape=circle]
+	"f₁"
+	node [shape=circle]
+	"q₄"
+	node [shape=circle]
+	"q₇"
+	node [shape=circle]
+	"q₁"
+	node [shape=circle]
+	"q₅"
+	node [shape=circle]
+	"q₀"
+	node [shape=circle]
+	"f₀"
+	node [shape=circle]
+	"q₂"
+	node [shape=circle]
+	"f₂"
+	node [shape=circle]
+	"f₃"
+	invisible_start [shape=point style=invis width=0.1]
+	invisible_start -> "q₇" [arrowhead=normal]
+	"q₀" -> "f₀" [label=a]
+	"f₀" -> "f₃" [label="ε"]
+	"q₁" -> "f₁" [label=b]
+	"f₁" -> "q₁" [label="ε"]
+	"f₁" -> "f₂" [label="ε"]
+	"q₂" -> "q₁" [label="ε"]
+	"q₂" -> "f₂" [label="ε"]
+	"f₂" -> "f₃" [label="ε"]
+	"q₃" -> "q₂" [label="ε"]
+	"q₃" -> "q₀" [label="ε"]
+	"f₃" -> "q₅" [label="ε"]
+	"q₄" -> "f₄" [label=a]
+	"f₄" -> "q₄" [label="ε"]
+	"f₄" -> "f₅" [label="ε"]
+	"q₅" -> "q₄" [label="ε"]
+	"q₅" -> "f₅" [label="ε"]
+	"f₅" -> "f₇" [label="ε"]
+	"f₅" -> "q₃" [label="ε"]
+	"q₇" -> "f₇" [label="ε"]
+	"q₇" -> "q₃" [label="ε"]
+}

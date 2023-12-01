@@ -1,0 +1,63 @@
+digraph {
+	rankdir=LR
+	node [shape=circle]
+	q_8
+	node [shape=circle]
+	q_10
+	node [shape=circle]
+	q_5
+	node [shape=circle]
+	q_1
+	node [shape=circle]
+	q_7
+	node [shape=circle]
+	q_Loop
+	node [shape=circle]
+	q_2
+	node [shape=circle]
+	q_4
+	node [shape=circle]
+	q_6
+	node [shape=circle]
+	q_9
+	node [shape=doublecircle]
+	q_Accept
+	node [shape=circle]
+	q_0
+	node [shape=circle]
+	q_Start
+	node [shape=circle]
+	q_3
+	invisible_start [shape=point style=invis width=0.1]
+	invisible_start -> q_Start [arrowhead=normal]
+	q_Start -> q_Loop [label="ε,ε->S$"]
+	q_Loop -> q_Accept [label="ε,$->ε"]
+	q_Loop -> q_1 [label="ε,V->c"]
+	q_Loop -> q_0 [label="ε,V->V"]
+	q_0 -> q_Loop [label="ε,ε->a"]
+	q_1 -> q_2 [label="ε,ε->V"]
+	q_2 -> q_Loop [label="ε,ε->a"]
+	q_Loop -> q_4 [label="ε,U->U"]
+	q_Loop -> q_3 [label="ε,U->c"]
+	q_3 -> q_Loop [label="ε,ε->U"]
+	q_4 -> q_Loop [label="ε,ε->b"]
+	q_Loop -> q_5 [label="ε,T->b"]
+	q_5 -> q_6 [label="ε,ε->T"]
+	q_6 -> q_Loop [label="ε,ε->a"]
+	q_Loop -> q_8 [label="ε,S->U"]
+	q_Loop -> q_7 [label="ε,S->V"]
+	q_7 -> q_Loop [label="ε,ε->a"]
+	q_8 -> q_9 [label="ε,ε->b"]
+	q_9 -> q_Loop [label="ε,ε->T"]
+	q_Loop -> q_10 [label="ε,W->W"]
+	q_10 -> q_Loop [label="ε,ε->b"]
+	q_Loop -> q_Loop [label="a,a->ε
+b,b->ε
+c,c->ε
+ε,V->ε
+ε,V->W
+ε,U->ε
+ε,T->ε
+ε,W->ε
+"]
+}

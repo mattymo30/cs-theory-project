@@ -1,0 +1,18 @@
+Start: q1
+Accept: qA
+Reject: qR
+(q1, 0, q2, ⊔, R)
+(q1, ⊔, qR, epsilon, R)
+(q1, X, qR, epsilon, R)
+(q2, 0, q3, X, R)
+(q2, ⊔, qA, epsilon, R)
+(q2, X, q2, epsilon, R)
+(q3, 0, q4, epsilon, R)
+(q3, ⊔, q5, epsilon, L)
+(q3, X, q3, epsilon, R)
+(q4, 0, q3, X, R)
+(q4, ⊔, qR, epsilon, L)
+(q4, X, q4, epsilon, R)
+(q5, 0, q5, epsilon, L)
+(q5, ⊔, q2, epsilon, R)
+(q5, X, q5, epsilon, L)
