@@ -1,5 +1,5 @@
 # cs-theory-project
-For my intriduction to Computer Science Theory course, I opted to complete a project that showcases four mathematical results that were learned. This included the following:
+For my introduction to Computer Science Theory course, I opted to complete a project that showcases four mathematical results that were learned. This included the following:
 
 * Power Set Construction for Finite Automata and implementation of DFA Interpreter
 * Construction of NFA From a Regular Expression
